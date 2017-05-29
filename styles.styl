@@ -1,0 +1,111 @@
+// reset
+
+*
+	box-sizing border-box
+
+html, body
+	margin 0
+	padding 0
+
+hr
+	margin 0
+	padding 0
+	border none
+
+p
+	margin 0.5em 0 0 0
+	padding 0
+
+// layout
+
+
+body
+	margin 0 auto
+	padding 0 3em
+	width 8.5in
+	
+row
+	display flex
+	width 100%
+
+column
+	padding 3em
+	flex 1 1 0
+
+	&:first-child
+		flex 2
+
+
+.jobs, .aside
+
+	div
+		line-height 1.5
+
+	> div ~ div, div ~ hr
+		margin-top 2em
+
+// styles
+
+$border = 1px solid #ccc
+
+.jobs
+	label
+		opacity 0.5
+		//font-style italic
+
+row:first-child
+	border-bottom $border
+
+.aside
+	border-left $border
+
+.tagline
+	font-size 1.2em
+	opacity 0.5
+	margin 0
+
+hr
+	border-top $border
+	height 1px
+
+img
+	vertical-align middle
+	max-height 4em
+	max-width 4em
+	~ img
+		margin-left 2em
+
+.repos
+	padding-top 2em
+	border-top $border
+	text-align center
+	width 100%
+
+
+// typography
+
+body
+	line-height 1.5
+	font-family 'Muli', sans-serif
+	font-size 12px
+	//@media print
+		//font-size 10px
+
+h1, h2, h3, h4, h5, h6
+	margin 0
+	padding 0
+	font-family 'Raleway', sans-serif
+	font-weight bold
+
+h1
+	font-size 3em
+	line-height 0.9em // makes visual center aligned top with right col
+	
+h4
+	font-size 1.4em
+
+
+
+// icons
+
+@import icons

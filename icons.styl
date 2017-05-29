@@ -1,0 +1,20 @@
+
+icons = ( email github heart phone )
+
+icon
+	display inline-block
+	width 1em
+	height 1em
+	vertical-align middle
+	margin-right 0.5em
+
+for icon in icons
+	icon.{icon}
+		background-image embedurl("icons/"+icon+".svg")
+
+
+icon.email, icon.heart
+	position relative
+	top -1px
+
+

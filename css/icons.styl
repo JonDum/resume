@@ -1,0 +1,15 @@
+
+icons = ( briefcase education email github heart phone skills tools )
+
+icon
+	display inline-block
+	width 1em
+	height 1em
+	vertical-align middle
+	margin-right 0.1em
+
+for icon in icons
+	icon.{icon}
+		background-image embedurl("icons/"+icon+".svg")
+
+
