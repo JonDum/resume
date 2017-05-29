@@ -21,8 +21,10 @@ p
 
 body
 	margin 0 auto
-	padding 0 3em
-	width 8.5in
+
+	@media screen
+		width 100%
+		max-width 1000px
 	
 row
 	display flex
@@ -33,7 +35,7 @@ column
 	flex 1 1 0
 
 	&:first-child
-		flex 2
+		flex 3
 
 
 .jobs, .aside
@@ -87,9 +89,9 @@ img
 body
 	line-height 1.5
 	font-family 'Muli', sans-serif
-	font-size 12px
-	//@media print
-		//font-size 10px
+	font-size 14px
+	@media print
+		font-size 11px
 
 h1, h2, h3, h4, h5, h6
 	margin 0
