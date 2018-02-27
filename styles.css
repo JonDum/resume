@@ -45,6 +45,10 @@ column:first-child {
 .aside div ~ hr {
   margin-top: 2em;
 }
+.jobs em,
+.aside em {
+  opacity: 0.6;
+}
 .jobs label {
   opacity: 0.5;
 }
