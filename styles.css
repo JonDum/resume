@@ -53,7 +53,7 @@ column:first-child {
 .jobs label {
   opacity: 0.5;
 }
-row:first-child {
+row:not(:only-child):first-child {
   border-bottom: 1px solid #ccc;
 }
 .aside {
@@ -75,6 +75,14 @@ img {
 }
 img ~ img {
   margin-left: 2em;
+}
+.intro > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.intro > img {
+  border-radius: 99em;
+  margin-right: 1em;
 }
 .repos {
   padding-top: 2em;

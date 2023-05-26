@@ -60,7 +60,7 @@ $border = 1px solid #ccc
 		opacity 0.5
 		//font-style italic
 
-row:first-child
+row:not(:only-child):first-child
 	border-bottom $border
 
 .aside
@@ -81,6 +81,16 @@ img
 	max-width 4em
 	~ img
 		margin-left 2em
+
+.intro
+	> *
+		display inline-block
+		vertical-align middle
+
+	> img
+		border-radius 99em
+		margin-right 1em
+
 
 .repos
 	padding-top 2em
